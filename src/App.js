@@ -11,25 +11,37 @@ import { bindActionCreators } from 'redux';
 import Details from './components/details';
 import { getGBDetails } from './redux/details/gbDetails';
 import { getEnglandDetails } from './redux/details/englandDetails';
+import { getEnglandRegionDetails } from './redux/details/englandRegionDetails';
 import { getScotlandDetails } from './redux/details/scotlandDetails';
+import { getScotlandRegionDetails } from './redux/details/scotlandRegionDetails';
 import { getWalesDetails } from './redux/details/walesDetails';
+import { getWalesRegionDetails } from './redux/details/walesRegionDetails';
 
 function App() {
   const dispatch = useDispatch();
   const gbDetails = useSelector((state) => state.gbDetailsReducer);
   const engDetails = useSelector((state) => state.englandDetailsReducer);
+  const engRegionDetails = useSelector((state) => state.englandRegionDetailsReducer);
   const scotDetails = useSelector((state) => state.scotlandDetailsReducer);
+  const scotRegionDetails = useSelector((state) => state.scotlandRegionDetailsReducer);
   const walDetails = useSelector((state) => state.walesDetailsReducer);
+  const walRegionDetails = useSelector((state) => state.walesRegionDetailsReducer);
   const loadGBDetailsAction = bindActionCreators(getGBDetails, dispatch);
   const loadEngDetailsAction = bindActionCreators(getEnglandDetails, dispatch);
+  const loadEngRegionDetailsAction = bindActionCreators(getEnglandRegionDetails, dispatch);
   const loadScotDetailsAction = bindActionCreators(getScotlandDetails, dispatch);
+  const loadScotRegionDetailsAction = bindActionCreators(getScotlandRegionDetails, dispatch);
   const loadWalDetailsAction = bindActionCreators(getWalesDetails, dispatch);
+  const loadWalRegionDetailsAction = bindActionCreators(getWalesRegionDetails, dispatch);
 
   useEffect(() => {
     loadGBDetailsAction();
     loadEngDetailsAction();
+    loadEngRegionDetailsAction();
     loadScotDetailsAction();
+    loadScotRegionDetailsAction();
     loadWalDetailsAction();
+    loadWalRegionDetailsAction();
   }, []);
 
   return (
@@ -48,7 +60,7 @@ function App() {
                 <div className="main-link-container">
                   <h1 className="area-name">ENGLAND</h1>
                   { engDetails.map((detail) => (
-                    <h2 key={0}>{detail.forecast}</h2>
+                    <h2 key={engDetails.indexOf(detail)}>{detail.forecast}</h2>
                   )) }
                 </div>
               </NavLink>
@@ -56,7 +68,7 @@ function App() {
                 <div className="main-link-container">
                   <h1 className="area-name">SCOTLAND</h1>
                   { scotDetails.map((detail) => (
-                    <h2 key={0}>{detail.forecast}</h2>
+                    <h2 key={scotDetails.indexOf(detail)}>{detail.forecast}</h2>
                   )) }
                 </div>
               </NavLink>
@@ -64,20 +76,38 @@ function App() {
                 <div className="main-link-container">
                   <h1 className="area-name">WALES</h1>
                   { walDetails.map((detail) => (
-                    <h2 key={0}>{detail.forecast}</h2>
+                    <h2 key={walDetails.indexOf(detail)}>{detail.forecast}</h2>
                   )) }
                 </div>
               </NavLink>
             </main>
           </Route>
           <Route path="/details/england">
-            <Details areaName="ENGLAND" />
+            { engDetails.map((detail) => (
+              <Details
+                key={engDetails.indexOf(detail)}
+                areaName={detail.name}
+                subAreas={engRegionDetails}
+              />
+            )) }
           </Route>
           <Route path="/details/scotland">
-            <Details areaName="SCOTLAND" />
+            { scotDetails.map((detail) => (
+              <Details
+                key={scotDetails.indexOf(detail)}
+                areaName={detail.name}
+                subAreas={scotRegionDetails}
+              />
+            )) }
           </Route>
           <Route path="/details/wales">
-            <Details areaName="WALES" />
+            { walDetails.map((detail) => (
+              <Details
+                key={walDetails.indexOf(detail)}
+                areaName={detail.name}
+                subAreas={walRegionDetails}
+              />
+            )) }
           </Route>
         </Switch>
       </Router>

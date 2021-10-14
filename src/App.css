@@ -4,7 +4,18 @@ main.home-main {
   align-items: center;
 }
 
+a.nav-link {
+  display: flex;
+  justify-content: center;
+}
+
 .main-link-container {
   width: 100%;
-  padding: 25px;
+  min-width: 85vw;
+  padding: 30px;
+  border: 2px solid black;
+}
+
+h1.area-name {
+  text-align: center;
 }

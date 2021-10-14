@@ -13,14 +13,16 @@ const regionIDs = [3, 4, 5, 8, 9, 10, 11, 12, 13, 14];
 export const getEnglandDetails = () => async (dispatch) => {
   const res = await axios.get(`${requestURL}${areaID}`);
   const responseData = res.data;
+  const detailsByArea = [];
   if (responseData) {
     const areaDetails = {
-      name: responseData.shortname,
-      forecast: responseData.intensity.forecast,
+      name: responseData.data[0].shortname,
+      forecast: responseData.data[0].data[0].intensity.forecast,
     };
+    detailsByArea.push(areaDetails);
     dispatch({
       type: GET_ENGLAND_DETAILS,
-      payload: areaDetails,
+      payload: detailsByArea,
     });
   }
 };
@@ -31,8 +33,8 @@ export const getEnglandRegionDetails = () => async (dispatch) => {
     const responseData = response.data;
     if (responseData) {
       const regionDetails = {
-        name: responseData.name,
-        forecast: responseData.intensity.forecast,
+        name: responseData.data[0].shortname,
+        forecast: responseData.data[0].data[0].intensity.forecast,
       };
       detailsByRegion.push(regionDetails);
     }

@@ -16,6 +16,10 @@ import { getScotlandDetails } from './redux/details/scotlandDetails';
 import { getScotlandRegionDetails } from './redux/details/scotlandRegionDetails';
 import { getWalesDetails } from './redux/details/walesDetails';
 import { getWalesRegionDetails } from './redux/details/walesRegionDetails';
+import gbMap from './images/great-britain-map-silhouette.png';
+import engMap from './images/england-map-silhouette.png';
+import scotMap from './images/scotland-map-silhouette.png';
+import walMap from './images/wales-map-silhouette.png';
 
 function App() {
   const dispatch = useDispatch();
@@ -52,32 +56,44 @@ function App() {
             <main className="home-main">
               <NavLink to="/" className="nav-link">
                 <div className="main-link-container">
-                  <h1 className="area-name">GREAT BRITAIN</h1>
-                  <h2>{gbDetails.forecast}</h2>
+                  <img src={gbMap} className="gb-map" alt="GB map" />
+                  <div className="area-details">
+                    <h1 className="area-name">GREAT BRITAIN</h1>
+                    <h2 className="area-forecast">{gbDetails.forecast}</h2>
+                  </div>
                 </div>
               </NavLink>
               <NavLink to="/details/england" className="nav-link">
                 <div className="main-link-container">
-                  <h1 className="area-name">ENGLAND</h1>
-                  { engDetails.map((detail) => (
-                    <h2 key={engDetails.indexOf(detail)}>{detail.forecast}</h2>
-                  )) }
+                  <img src={engMap} className="area-map" alt="England map" />
+                  <div className="area-details">
+                    <h1 className="area-name">ENGLAND</h1>
+                    { engDetails.map((detail) => (
+                      <h2 key={engDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>
+                    )) }
+                  </div>
                 </div>
               </NavLink>
               <NavLink to="/details/scotland" className="nav-link">
                 <div className="main-link-container">
-                  <h1 className="area-name">SCOTLAND</h1>
-                  { scotDetails.map((detail) => (
-                    <h2 key={scotDetails.indexOf(detail)}>{detail.forecast}</h2>
-                  )) }
+                  <img src={scotMap} className="area-map" alt="Scotland map" />
+                  <div className="area-details">
+                    <h1 className="area-name">SCOTLAND</h1>
+                    { scotDetails.map((detail) => (
+                      <h2 key={scotDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>
+                    )) }
+                  </div>
                 </div>
               </NavLink>
               <NavLink to="/details/wales" className="nav-link">
                 <div className="main-link-container">
-                  <h1 className="area-name">WALES</h1>
-                  { walDetails.map((detail) => (
-                    <h2 key={walDetails.indexOf(detail)}>{detail.forecast}</h2>
-                  )) }
+                  <img src={walMap} className="area-map" alt="Wales map" />
+                  <div className="area-details">
+                    <h1 className="area-name">WALES</h1>
+                    { walDetails.map((detail) => (
+                      <h2 key={walDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>
+                    )) }
+                  </div>
                 </div>
               </NavLink>
             </main>

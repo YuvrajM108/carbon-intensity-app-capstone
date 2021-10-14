@@ -2,11 +2,13 @@ main.home-main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ade146;
 }
 
 a.nav-link {
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 
 .main-link-container {
@@ -14,8 +16,24 @@ a.nav-link {
   min-width: 85vw;
   padding: 30px;
   border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
 }
 
-h1.area-name {
-  text-align: center;
+img.gb-map {
+  width: 150px;
+}
+
+img.area-map {
+  width: 125px;
+}
+
+.area-details {
+  display: flex;
+  flex-direction: column;
+}
+
+h1.area-name,
+.area-forecast {
+  color: white;
 }

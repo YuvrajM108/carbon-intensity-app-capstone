@@ -8,6 +8,13 @@ import {
 } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faArrowAltCircleRight,
+  faMicrophone,
+  faCog,
+  faAngleLeft,
+} from '@fortawesome/free-solid-svg-icons';
 import Details from './components/details';
 import { getGBDetails } from './redux/details/gbDetails';
 import { getEnglandDetails } from './redux/details/englandDetails';
@@ -53,20 +60,37 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
+            <nav className="top-bar">
+              <div className="top-bar-left">
+                <FontAwesomeIcon icon={faAngleLeft} className="nav-icon" />
+              </div>
+              <h2>CARBON INTENSITY TRACKER</h2>
+              <div className="top-bar-right">
+                <FontAwesomeIcon icon={faMicrophone} className="nav-icon" />
+                <FontAwesomeIcon icon={faCog} className="nav-icon" />
+              </div>
+            </nav>
             <main className="home-main">
               <NavLink to="/" className="nav-link">
                 <div className="main-link-container">
                   <img src={gbMap} className="gb-map" alt="GB map" />
                   <div className="area-details">
                     <h1 className="area-name">GREAT BRITAIN</h1>
-                    <h2 className="area-forecast">{gbDetails.forecast}</h2>
+                    <h2 className="area-forecast">
+                      Forecast:
+                      {gbDetails.forecast}
+                    </h2>
                   </div>
                 </div>
               </NavLink>
+              <div className="list-header-banner dark-background">
+                <h3 className="banner-text">FORECASTS GROUPED BY COUNTRY</h3>
+              </div>
               <NavLink to="/details/england" className="nav-link">
                 <div className="main-link-container">
                   <img src={engMap} className="area-map" alt="England map" />
                   <div className="area-details">
+                    <FontAwesomeIcon icon={faArrowAltCircleRight} className="arrow-icon" />
                     <h1 className="area-name">ENGLAND</h1>
                     { engDetails.map((detail) => (
                       <h2 key={engDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>
@@ -75,9 +99,10 @@ function App() {
                 </div>
               </NavLink>
               <NavLink to="/details/scotland" className="nav-link">
-                <div className="main-link-container">
+                <div className="main-link-container even-item">
                   <img src={scotMap} className="area-map" alt="Scotland map" />
                   <div className="area-details">
+                    <FontAwesomeIcon icon={faArrowAltCircleRight} className="arrow-icon" />
                     <h1 className="area-name">SCOTLAND</h1>
                     { scotDetails.map((detail) => (
                       <h2 key={scotDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>
@@ -89,6 +114,7 @@ function App() {
                 <div className="main-link-container">
                   <img src={walMap} className="area-map" alt="Wales map" />
                   <div className="area-details">
+                    <FontAwesomeIcon icon={faArrowAltCircleRight} className="arrow-icon" />
                     <h1 className="area-name">WALES</h1>
                     { walDetails.map((detail) => (
                       <h2 key={walDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>

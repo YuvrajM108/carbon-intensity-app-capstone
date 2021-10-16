@@ -59,6 +59,10 @@ Contributions, issues, and feature requests are welcome!
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgements
+
+Original design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

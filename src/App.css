@@ -7,6 +7,8 @@ main.home-main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-width: 85vw;
 }
 
 nav.top-bar {
@@ -28,15 +30,41 @@ a.nav-link {
   text-decoration: none;
 }
 
-.main-link-container {
+.main-link-container,
+.two-links-container {
   width: 100%;
   min-width: 85vw;
   padding: 30px;
+}
+
+.main-link-container {
   display: flex;
   justify-content: space-around;
 }
 
+.two-links-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.small-main-link {
+  width: 50%;
+  min-width: 41.65vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container {
+  max-width: 45vw;
+  max-height: 45vh;
+}
+
 .main-link-container,
+.small-main-link,
 .subarea-record {
   border: 1px solid white;
 }
@@ -81,4 +109,8 @@ h1.area-name,
   color: white;
   align-self: flex-end;
   font-size: 24px;
+}
+
+.wales-arrow {
+  margin-top: -6vh;
 }

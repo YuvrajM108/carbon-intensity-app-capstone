@@ -99,30 +99,36 @@ function App() {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="/details/scotland" className="nav-link">
-                <div className="main-link-container even-item">
-                  <img src={scotMap} className="area-map" alt="Scotland map" />
-                  <div className="area-details">
+              <div className="two-links-container">
+                <NavLink to="/details/scotland" className="nav-link">
+                  <div className="small-main-link even-item">
                     <FontAwesomeIcon icon={faArrowAltCircleRight} className="arrow-icon" />
-                    <h1 className="area-name">SCOTLAND</h1>
-                    { scotDetails.map((detail) => (
-                      <h2 key={scotDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>
-                    )) }
+                    <div className="info-container">
+                      <img src={scotMap} className="area-map" alt="Scotland map" />
+                      <div className="area-details">
+                        <h1 className="area-name">SCOTLAND</h1>
+                        { scotDetails.map((detail) => (
+                          <h2 key={scotDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>
+                        )) }
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </NavLink>
-              <NavLink to="/details/wales" className="nav-link">
-                <div className="main-link-container">
-                  <img src={walMap} className="area-map" alt="Wales map" />
-                  <div className="area-details">
-                    <FontAwesomeIcon icon={faArrowAltCircleRight} className="arrow-icon" />
-                    <h1 className="area-name">WALES</h1>
-                    { walDetails.map((detail) => (
-                      <h2 key={walDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>
-                    )) }
+                </NavLink>
+                <NavLink to="/details/wales" className="nav-link">
+                  <div className="small-main-link">
+                    <FontAwesomeIcon icon={faArrowAltCircleRight} className="arrow-icon wales-arrow" />
+                    <div className="info-container">
+                      <img src={walMap} className="area-map" alt="Wales map" />
+                      <div className="area-details">
+                        <h1 className="area-name">WALES</h1>
+                        { walDetails.map((detail) => (
+                          <h2 key={walDetails.indexOf(detail)} className="area-forecast">{detail.forecast}</h2>
+                        )) }
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </NavLink>
+                </NavLink>
+              </div>
             </main>
           </Route>
           <Route path="/details/england">

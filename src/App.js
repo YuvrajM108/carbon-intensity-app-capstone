@@ -53,6 +53,7 @@ function App() {
     loadScotRegionDetailsAction();
     loadWalDetailsAction();
     loadWalRegionDetailsAction();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

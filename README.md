@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Great Britain Carbon Intensity Tracier
 
-## Available Scripts
+> In this project I use React, JSX, and Redux to design a single-page application that allows users to view the carbon intensity forecast of different areas within Great Britain.
 
-In the project directory, you can run:
+![homepage-screenshot](./images/home-screenshot.PNG)
+![data-filtered-by-area-screenshot](./images/england-screenshot.PNG)
 
-### `yarn start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React JS
+- Redux
+- HTML
+- CSS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Live Demo
 
-### `yarn test`
+To view a live demo on Netlify, click [here](https://adoring-pasteur-94aa51.netlify.app/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `yarn build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Install a code editor(VSCode or Atom will do the trick)
+- Install NodeJS
+- Install Git Bash
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- In a folder of your choice, clone this repo using ```git clone https://github.com/YuvrajM108/carbon-intensity-app-capstone.git``` in your git bash.
+- ```cd carbon-intensity-app-capstone``` and then ```code .``` or ```atom .``` depending on your editor to open the project
 
-### `yarn eject`
+### Install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- In your integrated command line, ```yarn``` to install all node dependencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- In your integrated command line, ```yarn start``` will launch the website on your default browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Run tests
 
-## Learn More
+- In your integrated command line, ```yarn test``` will run all tests.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Yuvraj Manoo**
 
-### Code Splitting
+- GitHub: [@YuvrajjM108](https://github.com/YuvrajM108)
+- Twitter: [@YuvrajM108](https://twitter.com/YuvrajM108)
+- LinkedIn: [Yuvraj-Manoo](https://linkedin.com/in/yuvraj-manoo)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

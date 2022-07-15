@@ -62,14 +62,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <nav className="top-bar">
-              <div className="top-bar-left">
-                <FontAwesomeIcon icon={faAngleLeft} className="nav-icon" />
-              </div>
               <h2>CARBON INTENSITY TRACKER</h2>
-              <div className="top-bar-right">
-                <FontAwesomeIcon icon={faMicrophone} className="nav-icon" />
-                <FontAwesomeIcon icon={faCog} className="nav-icon" />
-              </div>
             </nav>
             <main className="home-main">
               <NavLink to="/" className="nav-link">

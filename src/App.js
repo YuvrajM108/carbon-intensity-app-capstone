@@ -9,12 +9,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faArrowAltCircleRight,
-  faMicrophone,
-  faCog,
-  faAngleLeft,
-} from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import Details from './components/details';
 import { getGBDetails } from './redux/details/gbDetails';
 import { getEnglandDetails } from './redux/details/englandDetails';

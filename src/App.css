@@ -18,10 +18,6 @@ nav.top-bar {
   min-width: 95vw;
 }
 
-.top-bar-right {
-  display: none;
-}
-
 .nav-icon-left,
 .nav-icon-right {
   font-size: 28px;

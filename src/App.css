@@ -22,10 +22,18 @@ nav.top-bar {
   display: none;
 }
 
-.nav-icon {
+.nav-icon-left,
+.nav-icon-right {
   font-size: 28px;
   margin: 0 5px 0 5px;
+}
+
+.nav-icon-left {
   color: white;
+}
+
+.nav-icon-right {
+  color: #ade146;
 }
 
 a.nav-link {

@@ -13,9 +13,14 @@ main.home-main {
 
 nav.top-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+nav.det-top-bar {
+  display: flex;
+  justify-content: space-between;
   align-items: baseline;
-  min-width: 95vw;
+  min-width: 80vw;
 }
 
 .nav-icon-left,

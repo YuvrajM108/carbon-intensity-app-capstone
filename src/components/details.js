@@ -13,7 +13,7 @@ const Details = ({
   subAreas,
 }) => (
   <main className="home-main">
-    <nav className="top-bar">
+    <nav className="det-top-bar">
       <NavLink to="/" className="nav-link">
         <div className="top-bar-left">
           <FontAwesomeIcon icon={faAngleLeft} className="nav-icon-left" />

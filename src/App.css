@@ -41,11 +41,6 @@ a.nav-link {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  transition: background-color 1.5s;
-}
-
-a.nav-link:hover {
-  background-color: #e4e020;
 }
 
 .main-link-container,

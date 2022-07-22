@@ -61,10 +61,6 @@ a.nav-link {
   margin-top: -30px;
 }
 
-.small-main-link:hover {
-  background-color: #e4e020;
-}
-
 .small-main-link {
   width: 50%;
   min-width: 41.65vw;
@@ -85,6 +81,10 @@ a.nav-link {
 .small-main-link,
 .subarea-record {
   border: 1px solid white;
+}
+
+.small-main-link:hover {
+  background-color: #e4e020;
 }
 
 .dark-background,

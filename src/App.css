@@ -13,15 +13,28 @@ main.home-main {
 
 nav.top-bar {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  min-width: 95vw;
+  justify-content: center;
 }
 
-.nav-icon {
+nav.det-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  min-width: 80vw;
+}
+
+.nav-icon-left,
+.nav-icon-right {
   font-size: 28px;
   margin: 0 5px 0 5px;
+}
+
+.nav-icon-left {
   color: white;
+}
+
+.nav-icon-right {
+  color: #ade146;
 }
 
 a.nav-link {
@@ -56,6 +69,7 @@ a.nav-link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-color 1.5s;
 }
 
 .info-container {
@@ -67,6 +81,10 @@ a.nav-link {
 .small-main-link,
 .subarea-record {
   border: 1px solid white;
+}
+
+.small-main-link:hover {
+  background-color: #e4e020;
 }
 
 .dark-background,

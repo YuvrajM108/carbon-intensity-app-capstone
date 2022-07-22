@@ -74,6 +74,11 @@ a.nav-link:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-color 1.5s;
+}
+
+.small-main-link:hover {
+  background-color: #e4e020;
 }
 
 .info-container {

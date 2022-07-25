@@ -83,7 +83,14 @@ a.nav-link {
   border: 1px solid white;
 }
 
-.small-main-link,
+.small-main-link:hover {
+  background-color: #e4e020;
+}
+
+.large-link {
+  transition: background-color 1.5s;
+}
+
 .large-link:hover {
   background-color: #e4e020;
 }

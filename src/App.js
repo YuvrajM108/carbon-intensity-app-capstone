@@ -76,7 +76,7 @@ function App() {
                 <h3 className="banner-text">FORECASTS GROUPED BY COUNTRY</h3>
               </div>
               <NavLink to="/details/england" className="nav-link">
-                <div className="main-link-container">
+                <div className="main-link-container large-link">
                   <img src={engMap} className="area-map" alt="England map" />
                   <div className="area-details">
                     <FontAwesomeIcon icon={faArrowAltCircleRight} className="arrow-icon" />

@@ -140,3 +140,27 @@ h1.area-name,
 .wales-arrow {
   margin-top: -6vh;
 }
+
+.large-link:hover .area-name {
+  color: black;
+}
+
+.large-link:hover .area-forecast {
+  color: black;
+}
+
+.large-link:hover .arrow-icon {
+  color: black;
+}
+
+.small-link:hover .area-name {
+  color: black;
+}
+
+.small-link:hover .area-forecast {
+  color: black;
+}
+
+.small-link:hover .arrow-icon {
+  color: black;
+}

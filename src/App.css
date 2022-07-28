@@ -153,14 +153,14 @@ h1.area-name,
   color: black;
 }
 
-.small-link:hover .area-name {
+.small-main-link:hover .area-name {
   color: black;
 }
 
-.small-link:hover .area-forecast {
+.small-main-link:hover .area-forecast {
   color: black;
 }
 
-.small-link:hover .arrow-icon {
+.small-main-link:hover .arrow-icon {
   color: black;
 }

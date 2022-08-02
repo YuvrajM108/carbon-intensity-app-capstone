@@ -116,7 +116,6 @@ img.area-map {
 h1.area-name,
 .area-forecast {
   color: white;
-  transition: color 1.5s;
 }
 
 .list-header-banner {
@@ -136,7 +135,6 @@ h1.area-name,
   color: white;
   align-self: flex-end;
   font-size: 24px;
-  transition: color 1.5s;
 }
 
 .wales-arrow {

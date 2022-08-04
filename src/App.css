@@ -166,3 +166,19 @@ h1.area-name,
 .small-main-link:hover .arrow-icon {
   color: black;
 }
+
+h1.area-name::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 2em;
+  background-color: #0AF;
+  transform: scaleX(0);
+}
+
+h1.area-name:hover::before,
+h1.area-name:focus::before {
+  transform: scaleX(1);
+}

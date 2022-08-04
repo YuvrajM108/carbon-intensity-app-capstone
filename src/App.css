@@ -174,7 +174,7 @@ h1.area-name::before {
   right: 0;
   bottom: 0;
   top: 2em;
-  background-color: #0AF;
+  background-color: #0af;
   transform: scaleX(0);
 }
 

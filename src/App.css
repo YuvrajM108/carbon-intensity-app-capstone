@@ -117,6 +117,7 @@ h1.area-name,
 .area-forecast {
   color: white;
   transition: color 1s ease-in-out;
+  padding-bottom: 0.25rem;
 }
 
 .list-header-banner {
@@ -173,12 +174,13 @@ h1.area-name::before {
   left: 0;
   right: 0;
   bottom: 0;
-  top: 2em;
+  width: 0;
+  height: 3px;
   background-color: #0af;
-  transform: scaleX(0);
+  transition: width 0.25s ease-in
 }
 
 h1.area-name:hover::before,
 h1.area-name:focus::before {
-  transform: scaleX(1);
+  width: 100%;
 }

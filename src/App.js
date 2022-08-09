@@ -67,7 +67,7 @@ function App() {
                     <h1 className="area-name">GREAT BRITAIN</h1>
                     <h2 className="area-forecast">
                       Forecast:
-                      {gbDetails.forecast}
+                      {' '+gbDetails.forecast}
                     </h2>
                   </div>
                 </div>

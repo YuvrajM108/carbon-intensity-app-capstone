@@ -146,6 +146,8 @@ h1.area-name,
 
 .large-link:hover .area-name {
   color: black;
+  text-decoration: underline;
+  text-decoration-color: #0af;
 }
 
 .large-link:hover .area-forecast {

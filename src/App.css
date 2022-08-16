@@ -171,3 +171,15 @@ h1.area-name,
 .small-main-link:hover .arrow-icon {
   color: black;
 }
+
+.small-main-link:hover img.area-map {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.large-main-link:hover img.area-map {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}

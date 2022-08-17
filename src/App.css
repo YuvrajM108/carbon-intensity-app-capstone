@@ -178,8 +178,8 @@ h1.area-name,
   transform: scale(1.2);
 }
 
-.large-main-link:hover img.area-map {
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
+.large-link:hover img.area-map {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }

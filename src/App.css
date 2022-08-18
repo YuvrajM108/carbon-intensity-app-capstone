@@ -183,3 +183,7 @@ h1.area-name,
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+img.area-map {
+  transition: all 1.5s ease-in-out;
+}

@@ -106,7 +106,7 @@ img.gb-map {
 
 img.area-map {
   width: 125px;
-  transition: all 1.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .area-details {

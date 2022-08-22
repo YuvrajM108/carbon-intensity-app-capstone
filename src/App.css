@@ -117,7 +117,7 @@ img.area-map {
 h1.area-name,
 .area-forecast {
   color: white;
-  transition: color 1s ease-in-out, text-decoration 1.5s ease-in-out;
+  transition: text-decoration 1.5s ease-in-out;
   padding-bottom: 0.25rem;
 }
 
@@ -138,7 +138,6 @@ h1.area-name,
   color: white;
   align-self: flex-end;
   font-size: 24px;
-  transition: color 1s ease-in-out;
 }
 
 .wales-arrow {

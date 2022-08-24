@@ -117,7 +117,6 @@ img.area-map {
 h1.area-name,
 .area-forecast {
   color: white;
-  transition: text-decoration 1.5s ease-in-out;
   padding-bottom: 0.25rem;
 }
 
@@ -158,8 +157,6 @@ h1.area-name,
 
 .small-main-link:hover .area-name {
   color: black;
-  text-decoration: underline;
-  text-decoration-color: #0af;
 }
 
 .small-main-link:hover .area-forecast {

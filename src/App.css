@@ -137,8 +137,8 @@ h1.area-name,
   color: black;
   align-self: flex-end;
   font-size: 24px;
-  visibility: hidden;
-  transition: visibility 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .wales-arrow {
@@ -154,7 +154,7 @@ h1.area-name,
 }
 
 .large-link:hover .arrow-icon {
-  visibility: visible;
+  opacity: 1;
 }
 
 .small-main-link:hover .area-name {
@@ -166,7 +166,7 @@ h1.area-name,
 }
 
 .small-main-link:hover .arrow-icon {
-  visibility: visible;
+  opacity: 1;
 }
 
 .small-main-link:hover img.area-map {

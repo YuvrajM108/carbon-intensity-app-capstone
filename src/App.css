@@ -33,6 +33,10 @@ nav.det-top-bar {
   color: white;
 }
 
+.nav-icon-left:hover {
+  color: black;
+}
+
 .nav-icon-right {
   color: #ade146;
 }

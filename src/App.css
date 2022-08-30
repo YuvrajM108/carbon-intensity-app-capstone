@@ -33,10 +33,6 @@ nav.det-top-bar {
   color: white;
 }
 
-.nav-icon-left:hover {
-  color: black;
-}
-
 .nav-icon-right {
   color: #ade146;
 }
@@ -45,6 +41,10 @@ a.nav-link {
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+
+a.back-link:hover .nav-icon-left {
+  color: black;
 }
 
 .main-link-container,

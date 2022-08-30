@@ -14,7 +14,7 @@ const Details = ({
 }) => (
   <main className="home-main">
     <nav className="det-top-bar">
-      <NavLink to="/" className="nav-link">
+      <NavLink to="/" className="nav-link back-link">
         <div className="top-bar-left">
           <FontAwesomeIcon icon={faAngleLeft} className="nav-icon-left" />
         </div>

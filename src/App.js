@@ -57,7 +57,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <nav className="top-bar">
-              <h2>CARBON INTENSITY TRACKER</h2>
+              <h2>UK CARBON INTENSITY TRACKER</h2>
             </nav>
             <main className="home-main">
               <NavLink to="/" className="nav-link">

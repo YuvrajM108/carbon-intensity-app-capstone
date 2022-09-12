@@ -9,12 +9,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faArrowAltCircleRight,
-  faMicrophone,
-  faCog,
-  faAngleLeft,
-} from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import Details from './components/details';
 import { getGBDetails } from './redux/details/gbDetails';
 import { getEnglandDetails } from './redux/details/englandDetails';
@@ -62,14 +57,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <nav className="top-bar">
-              <div className="top-bar-left">
-                <FontAwesomeIcon icon={faAngleLeft} className="nav-icon" />
-              </div>
-              <h2>CARBON INTENSITY TRACKER</h2>
-              <div className="top-bar-right">
-                <FontAwesomeIcon icon={faMicrophone} className="nav-icon" />
-                <FontAwesomeIcon icon={faCog} className="nav-icon" />
-              </div>
+              <h2>UK CARBON INTENSITY TRACKER</h2>
             </nav>
             <main className="home-main">
               <NavLink to="/" className="nav-link">
@@ -78,8 +66,7 @@ function App() {
                   <div className="area-details">
                     <h1 className="area-name">GREAT BRITAIN</h1>
                     <h2 className="area-forecast">
-                      Forecast:
-                      {gbDetails.forecast}
+                      {`Forecast: ${gbDetails.forecast}`}
                     </h2>
                   </div>
                 </div>
@@ -88,7 +75,7 @@ function App() {
                 <h3 className="banner-text">FORECASTS GROUPED BY COUNTRY</h3>
               </div>
               <NavLink to="/details/england" className="nav-link">
-                <div className="main-link-container">
+                <div className="main-link-container large-link">
                   <img src={engMap} className="area-map" alt="England map" />
                   <div className="area-details">
                     <FontAwesomeIcon icon={faArrowAltCircleRight} className="arrow-icon" />

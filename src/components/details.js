@@ -13,16 +13,16 @@ const Details = ({
   subAreas,
 }) => (
   <main className="home-main">
-    <nav className="top-bar">
-      <NavLink to="/" className="nav-link">
+    <nav className="det-top-bar">
+      <NavLink to="/" className="nav-link back-link">
         <div className="top-bar-left">
-          <FontAwesomeIcon icon={faAngleLeft} className="nav-icon" />
+          <FontAwesomeIcon icon={faAngleLeft} className="nav-icon-left" />
         </div>
       </NavLink>
       <h2>CARBON INTENSITY TRACKER</h2>
       <div className="top-bar-right">
-        <FontAwesomeIcon icon={faMicrophone} className="nav-icon" />
-        <FontAwesomeIcon icon={faCog} className="nav-icon" />
+        <FontAwesomeIcon icon={faMicrophone} className="nav-icon-right" />
+        <FontAwesomeIcon icon={faCog} className="nav-icon-right" />
       </div>
     </nav>
     <h1>{areaName.toUpperCase()}</h1>
